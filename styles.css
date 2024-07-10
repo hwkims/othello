@@ -36,6 +36,7 @@ body {
     align-items: center;
     position: relative;
     cursor: not-allowed;
+    transform: rotateY(360deg);
     transition: 0.5s;
 }
 
@@ -67,7 +68,9 @@ cursor: not-allowed;
     box-shadow: 0px 0px 6px #666,
     6px 6px 6px #666
     ;
+    transform: rotateY(360deg);
     transition: 0.5s;
+
 }
 
 
@@ -84,6 +87,7 @@ cursor: not-allowed;
     box-shadow: 0px 0px 6px #666,
     6px 6px 6px #666
     ;
+    transform: rotateY(360deg);
     transition: 0.5s;
 }
 
