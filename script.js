@@ -32,15 +32,15 @@ sound2.onerror = function(){
     console.log("Sound file SoundFileURL.mp3 failed to load.")
 };
 
-var sound3 = new Audio();         
-sound3.src = "mixkit-ominous-drums-227.wav";  
-sound3.oncanplaythrough = function(){   
-    sound3.readyToRock = true;    
+// var sound3 = new Audio();         
+// sound3.src = "mixkit-ominous-drums-227.wav";  
+// sound3.oncanplaythrough = function(){   
+//     sound3.readyToRock = true;    
                                  
-};
-sound3.onerror = function(){      
-    console.log("Sound file SoundFileURL.mp3 failed to load.")
-};
+// };
+// sound3.onerror = function(){      
+//     console.log("Sound file SoundFileURL.mp3 failed to load.")
+// };
 
 var sound4 = new Audio();         
 sound4.src = "button-22.mp3";  
@@ -659,10 +659,10 @@ function checkWin(){
 let winningDiv =document.querySelector("#winningMessage")
 let winningMessage=document.querySelector('[data-winning-message-text]')
 if(isGameOver(board)){
-  if(sound3 && sound3.readyToRock){  // check for the sound and if it has loaded
-    sound3.currentTime = 0;       // seek to the start
-    sound3.play();                // play it till it ends
-  }
+  // if(sound3 && sound3.readyToRock){  // check for the sound and if it has loaded
+  //   sound3.currentTime = 0;       // seek to the start
+  //   sound3.play();                // play it till it ends
+  // }
   winningDiv.classList.add("show")
  if(scoreboard(board,'O')>scoreboard(board,'X'))
  winningMessage.innerText="You WIN!"
